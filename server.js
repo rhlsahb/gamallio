@@ -6,9 +6,9 @@ app.use(express.json());
 
 app.post('/upload', async (req, res) => {
     const { image, fileName } = req.body;
-    const githubToken = 'YOUR_GITHUB_TOKEN';
-    const owner = 'YOUR_GITHUB_USERNAME';
-    const repo = 'YOUR_REPOSITORY_NAME';
+    const githubToken = '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';
+    const owner = 'rhlsahb';
+    const repo = 'gamallio';
 
     const path = `images/${fileName}`;
     const content = Buffer.from(image, 'base64').toString('base64');
